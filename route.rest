@@ -1,0 +1,71 @@
+GET http://localhost:3000/blogs
+
+
+###
+
+
+GET http://localhost:3000/blogs/639cac35db8fd3829dc8fa71
+
+
+
+###
+
+
+POST  http://localhost:3000/blogs
+Content-Type: application/json
+
+{
+    "title":"blog one",
+    "description":"this is my first node api"
+}
+
+
+###
+
+PATCH http://localhost:3000/blogs/639ca9ee5ad50109e88dd696
+Content-Type: application/json
+
+{
+    "title": "blog two"
+    
+}
+
+
+###
+
+DELETE http://localhost:3000/blogs/639cac35db8fd3829dc8fa71
+
+
+###
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username":"abebe",
+    "email":"abe@gmail.com",
+    "password":"hello"
+}
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+     
+    "username":"kal",
+    "password":"hello"
+}
+
+###
+
+
+POST http://localhost:3000/user/639d64989aa93e4fb49dbd60
+Content-Type: application/json
+
+
+{
+    "username":"kalish"
+}
+
